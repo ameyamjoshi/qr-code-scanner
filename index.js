@@ -16,7 +16,7 @@ function onScanSuccess(decodedText, decodedResult) {
     // ...
     var r=document.getElementsByClassName("results");
     console.log(r)
-    r[0].innerHTML =decodedText
+    r[0].innerHTML =decodedText + " "+new Date().toLocaleTimeString()
     html5QrcodeScanner.clear();
     // ^ this will stop the scanner (video feed) and clear the scan area.
 }
